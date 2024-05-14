@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pharmaceutical Company </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 90%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color: #6fa1f8;
+                font-size: 35px;
+                font-weight: 700;
+                margin-left: -100px;
+                letter-spacing: 3px;
+            }
+            img{
+                height:70px;
+                margin-top:-3px;
+                margin-left:5px;
+                margin-right:5px;
+            }
+            span {
+                color: white;
+            }
+            
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: white;
+                border-radius: 10px;
+                background: #6fa1f8;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: #6fa1f8;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .content {
+                position: absolute;
+                top: 52%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+            .text h2 {
+                color:#6fa1f8;
+                font-weight: 700;
+                font-size: 50px;
+                letter-spacing: 3px;
+            }
+            .text h3 {
+                color:#6fa1f8;
+                font-weight: 700;
+                font-size: 45px;
+                letter-spacing: 3px;
+            }
+            .text p {
+                color:white;
+                text-transform: capitalize;
+                font-size: 24px;
+                margin-bottom: 30px;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+            }
+            .login {
+                margin: 4px -20px;
+                border: 2px solid #6fa1f8;
+                padding: 13px 35px;
+                letter-spacing: 1px;
+                color: white;
+                border-radius: 30px;
+                background-color: #6fa1f8;
+                text-decoration: none;
+            }
+            .login:hover {
+                border: 2px solid #6fa1f8;
+                color: #6fa1f8;
+                background-color: white;
+                transition: 0.5s;
+                cursor: pointer;
+            } 
+            .signup {
+                margin: 0px 50px;
+                border: 2px solid #6fa1f8;
+                padding: 13px 35px;
+                letter-spacing: 1px;
+                color: white;
+                border-radius: 30px;
+                background-color: #6fa1f8;
+                text-decoration: none;
+            }
+            .signup:hover {
+                border: 2px solid #6fa1f8;
+                color: #6fa1f8;
+                background-color:white;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+            footer {
+                background-color: #6fa1f8;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <img src="download (2).png">
+            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
+                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
+                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
+                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        
+        </div>
+        <div class="content">
+            <div class="text">
+                <h2 class="logo">CIPLA<h2>
+                <h3 class="logo">PHARMACEUTICALS</h3>
+                <br>
+                <p>With our growing scientific understanding of rare diseases, we shall continue to introduce ground breaking therapies to give our patients their new beginnings!</p>
+                <br>
+                <div>
+                    <a href="#" class="login">LOG IN</a>
+                    <a href="#" class="signup">SIGN UP</a>
+                </div>
+                
+                
+            </div>
+        </div>  
+    </div>
+    <footer>
+        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
+    </footer>
+</body>
+</html>

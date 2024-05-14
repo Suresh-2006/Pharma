@@ -31,7 +31,7 @@ Publish the website in the LocalHost.
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Software Development Company </title>
+        <title> Pharmaceutical Company </title>
         <style type="text/css">
             * {
                 margin: 0;
@@ -192,12 +192,12 @@ Publish the website in the LocalHost.
     <div class="banner">
         <br>
         <div class="navbar">
-            <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (2).png">
+            <img src="download (2).png">
             <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
                 <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
             </ul>
             <form action="" method="get">
@@ -229,12 +229,12 @@ Publish the website in the LocalHost.
 </body>
 </html>
 ```
-products.html
+## products.html
 ```
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Software Development Company </title>
+        <title> Pharmaceutical Company </title>
         <style type="text/css">
             * {
                 margin: 0;
@@ -344,17 +344,18 @@ products.html
                 padding: 30px 20px;
             }
             .container .box-container .box img {
-                height: 70px;
+                height: 90px;
                 border-radius: 20px;
             }
             .container .box-container .box h3 {
                 color:#6fa1f8;
-                font-size: large;
+                font-size: larger;
+                line-height: 4;
                 padding: 10px 0;
             }
             .container .box-container .box p {
                 color: white;
-                font-size: small;
+                font-size: large;
                 line-height: 2;
             }
             footer {
@@ -367,12 +368,12 @@ products.html
     <div class="banner">
         <br>
         <div class="navbar">
-            <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (2).png">
+            <img src="download (2).png">
             <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
                 <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
             </ul>
             <form action="" method="get">
@@ -384,27 +385,27 @@ products.html
         <div class="container">
             <div class="box-container">
                 <div class="box">
-                    <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (5).jpeg" alt="">
+                    <img src="download (4).jpeg" alt="">
                     <h3>CIPLA NICOTEX</h3>
                     <p>Nicotex is a nicotine gum that helps you quit smoking using the principle of Nicotine Replacement Therapy (NRT).</p>
                 </div>
                 <div class="box">
-                    <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (9).jpeg" alt="">
+                    <img src="download (9).jpeg" alt="">
                     <h3>CIPLA MAXIRICH</h3>
                     <p>Blend of more than 15 Multivitamins & minerals in a softgel capsule to supplement your daily diet. Keeps you active & energised with B-Vitamin support. </p>
                 </div>
                 <div class="box">
-                    <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (10).jpeg" alt="">
+                    <img src="download (10).jpeg" alt="">
                     <h3>CIPLA AEROCORCH</h3>
                     <p>Aerocort Inhaler helps in easy breathing by widening your airways. It also gives relief from symptoms such as tightness in your chest, shortness of breath, wheezing and coughing..</p>
                 </div>
                 <div class="box">
-                    <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (11).jpeg" alt="">
+                    <img src="download (11).jpeg" alt="">
                     <h3>CIPLA OMNIGEL</h3>
                     <p>Omnigel is scientifically formulated, Diclofenac Gel - to address musculoskeletal pain in day to day life like neck, shoulder & back pain.</p>
                 </div>
                 <div class="box">
-                    <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (12).jpeg" alt="">
+                    <img src="download (12).jpeg" alt="">
                     <h3>CIPLA Urimax</h3>
                     <p>Urimax Tablet is a Tablet manufactured by Cipla. It is commonly used for the diagnosis or treatment of Improve urination, enlarged prostate.</p>
                 </div>
@@ -417,12 +418,197 @@ products.html
 </body>
 </html>
 ```
-contact.html
+
+
+## people.html
 ```
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Software Development Company </title>
+        <title> Pharmaceutical Company </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 90%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            
+            
+            .logo {
+                color: #6fa1f8;
+                font-size: 35px;
+                font-weight: 700;
+                margin-left: -90px;
+                letter-spacing: 3px;
+            }
+            img{
+                height:50px;
+                margin-top:-3px;
+                margin-left:-5px;
+                margin-right:5px;
+            }
+            span {
+                color: white;
+            }
+            
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(195%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: white;
+                border-radius: 10px;
+                background: #6fa1f8;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: #6fa1f8;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .image {
+                position: relative;
+                border: 0;
+                top: 100px;
+                
+                background: transparent;
+            }
+            .image table {
+                border: 0;
+                color: white;
+                position: relative;
+                left: 180px;
+                
+            }
+            .image table img {
+                height: 140px;
+                width: 140px;
+                border: 2px solid white;
+                padding: 5px;
+                border-radius: 50%;
+            }
+            .image table td {
+                color: #eefe0a;
+            }
+            footer {
+                background-color: #6fa1f8;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <br>
+
+        <div class="navbar">
+            <img src="download (2).png">
+            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
+                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
+                <li><a href="http://127.0.0.1:8000/static/people.html" class="bg-people"> Acheivements</a></li>
+                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+                <h2 class="logo" align="center"  >CIPLA<h2>
+                <h3 class="logo" align="center">MILESTONES & ACHEIVEMENTS</h3>
+        <div class="image">
+            <table cellspacing="20"> 
+                <tr align="center">
+                    <td> <img src="image.png"> </td>
+                    <td> <img src="I2.png"> </td>
+                    <td> <img src="I3.png"> </td>
+                    <td> <img src="I4.png"> </td>
+                    <td> <img src="I5.png"> </td>
+                    <td> <img src="I6.png"> </td>
+                    
+                
+                <tr align="center">
+                    <td> HEALTH & WELLNESS AWARD</td>
+                    <td> GOLDEN PEACOCK AWARD</td>
+                    <td> LOGISTICS COMPANY AWARD</td>
+                    <td> INDIA PHARMA AWARD 2022 </td>
+                    <td> SILVER FEATHER AWARD</td>
+                    <td>INDIAN PHARMA AWARDS 2023</td>
+        
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
+    </footer>
+</body>
+</html>
+```
+## contact.html
+```
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pharmaceutical Company </title>
         <style type="text/css">
             * {
                 margin: 0;
@@ -527,7 +713,7 @@ contact.html
                 background: transparent;
                 position: relative;
                 top: 50px;
-                left: 250px;
+                left: 400px;
             }
             .box-2 {
                 height: 330px;
@@ -537,7 +723,7 @@ contact.html
                 border-radius: 50px;
                 background: transparent;
                 position: relative;
-                left: 300px;
+                left: 480px;
             }
             .box-1 form {
                 display: flex;
@@ -557,7 +743,7 @@ contact.html
                 font-size: 15px;
                 color: white;
                 position: relative;
-                top: 30px;
+                top: 20px;
             }
             .box-1 form textarea {
                 background: transparent;
@@ -586,7 +772,7 @@ contact.html
                 color: white;
                 position: relative;
                 top: 25px;
-                left: 50px;
+                left: 100px;
                 font-size: 30px;
             }
             .box-2 h2 {
@@ -616,12 +802,12 @@ contact.html
     <div class="banner">
         <br>
         <div class="navbar">
-            <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (2).png">
-            <h1 class="logo">CIPLA &trade;</sup></h1>
+            <img src="download (2).png">
+            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
                 <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
             </ul>
             <form action="" method="get">
@@ -638,7 +824,7 @@ contact.html
                         <br>
                         <input type="email" placeholder="Your Email">
                         <br>
-                        <textarea rows="2" cols="40" placeholder="Your Message"> </textarea>
+                        <textarea rows="2" cols="30" placeholder="Your Message"> </textarea>
                         <br>
                         <button type="submit"> Submit </button>
                     </center>
@@ -658,199 +844,19 @@ contact.html
 </footer>
 </body>
 ```
-## people.html
-```
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Software Development Company</title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 90%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            
-            .logo {
-                color: #6fa1f8;
-                font-size: 35px;
-                font-weight: 700;
-                margin-left: -100px;
-                letter-spacing: 3px;
-            }
-            img{
-                height:50px;
-                margin-top:-3px;
-                margin-left:-5px;
-                margin-right:5px;
-            }
-            span {
-                color: white;
-            }
-            
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(180%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #6fa1f8;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #6fa1f8;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .image {
-                position: relative;
-                border: 0;
-                top: 150px;
-                
-                background: transparent;
-            }
-            .image table {
-                border: 0;
-                color: white;
-                position: relative;
-                left: 200px;
-                
-            }
-            .image table img {
-                height: 140px;
-                width: 140px;
-                border: 2px solid white;
-                padding: 5px;
-                border-radius: 50%;
-            }
-            .image table td {
-                color: #00d5ff;
-            }
-            footer {
-                background-color: #6fa1f8;
-                margin-top: auto;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
-        <br>
-        <div class="navbar">
-            <img src="c:\Users\admin\Desktop\Prototyping to IoT\exp2\download (2).png">
-            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html" class="bg-people"> People </a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
-        </div>
-        <div class="image">
-            <table cellspacing="20"> 
-                <tr align="center">
-                    <td> <img src="SURESH.jpeg"> </td>
-                    <td> <img src="santhosh.jpeg"> </td>
-                    <td> <img src="sreehari.jpeg"> </td>
-                    <td> <img src="vibin.jpeg"> </td>
-                    <td> <img src="varman.jpeg"> </td>
-                    <td> <img src="shyam.jpeg"> </td>
-                    
-                <tr align="center">
-                    <th> SURESH</th>
-                    <th> SANTHOSH </th>
-                    <th> SREEHARI</th>
-                    <th> VIBIN</th>
-                    <th> ARUNMOZHI</th>
-                    <th> SHYAM</th>
-                </tr>
-                <tr align="center">
-                    <td> CEO </td>
-                    <td> CEO CO-FOUNDER </td>
-                    <td> CTO CO-FOUNDER </td>
-                    <td> DIRECTOR </td>
-                    <td> Ass.DIRECTOR </td>
-                    <td> Dy.DIRECTOR </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <footer>
-        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
-    </footer>
-</body>
-</html>
-```
-
-
-
 ## OUTPUT:
+
 ## home.html
-![image](https://github.com/Suresh-2006/Pharma/assets/149347611/83e9dd14-d6f8-4d79-84ee-361bef82da12)
-
+![alt text](home.png)
 ## products.html
-![image](https://github.com/Suresh-2006/Pharma/assets/149347611/9edc09c1-e16a-4467-8935-29b801861720)
-
+![alt text](products.png)
+## people.html
+![alt text](people.png)
 ## contact.html
-![image](https://github.com/Suresh-2006/Pharma/assets/149347611/ccc65714-bdfd-47e1-9805-d631836005cc)
- ## people.html
- ![image](https://github.com/Suresh-2006/Pharma/assets/149347611/4e003745-fa71-414b-8681-f2c9d699fd1c)
+![alt text](contact.png)
 
+ 
+ 
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
