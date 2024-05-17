@@ -1,180 +1,90 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Pharmaceutical Company </title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 90%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            
-            
-            
-            .logo {
-                color: #6fa1f8;
-                font-size: 35px;
-                font-weight: 700;
-                margin-left: -90px;
-                letter-spacing: 3px;
-            }
-            img{
-                height:50px;
-                margin-top:-3px;
-                margin-left:-5px;
-                margin-right:5px;
-            }
-            span {
-                color: white;
-            }
-            
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(195%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #6fa1f8;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #6fa1f8;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .image {
-                position: relative;
-                border: 0;
-                top: 100px;
-                
-                background: transparent;
-            }
-            .image table {
-                border: 0;
-                color: white;
-                position: relative;
-                left: 180px;
-                
-            }
-            .image table img {
-                height: 140px;
-                width: 140px;
-                border: 2px solid white;
-                padding: 5px;
-                border-radius: 50%;
-            }
-            .image table td {
-                color: #eefe0a;
-            }
-            footer {
-                background-color: #6fa1f8;
-                margin-top: auto;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
-        <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipla - Milestones & Achievements</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
 
-        <div class="navbar">
-            <img src="download (2).png">
-            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html" class="bg-people"> Acheivements</a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Cipla Logo" height="70" class="mr-2">
+                <h1 class="mb-0">CIPLA<sup>&trade;</sup></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-lg-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter to Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container flex-fill my-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <br>
+                <h2>CIPLA MILESTONES & ACHIEVEMENTS</h2>
+            </div>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-                <h2 class="logo" align="center"  >CIPLA<h2>
-                <h3 class="logo" align="center">MILESTONES & ACHEIVEMENTS</h3>
-        <div class="image">
-            <table cellspacing="20"> 
-                <tr align="center">
-                    <td> <img src="image.png"> </td>
-                    <td> <img src="I2.png"> </td>
-                    <td> <img src="I3.png"> </td>
-                    <td> <img src="I4.png"> </td>
-                    <td> <img src="I5.png"> </td>
-                    <td> <img src="I6.png"> </td>
-                    
-                
-                <tr align="center">
-                    <td> HEALTH & WELLNESS AWARD</td>
-                    <td> GOLDEN PEACOCK AWARD</td>
-                    <td> LOGISTICS COMPANY AWARD</td>
-                    <td> INDIA PHARMA AWARD 2022 </td>
-                    <td> SILVER FEATHER AWARD</td>
-                    <td>INDIAN PHARMA AWARDS 2023</td>
-        
-                </tr>
-            </table>
+        <br><br>
+        <br><br>
+        <div class="row text-center mt-4">
+            <div class="col-md-2 col-6">
+                <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Health & Wellness Award">
+                <p class="text-warning">HEALTH & WELLNESS AWARD</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I2.png" class="img-fluid rounded-circle mb-2" alt="Golden Peacock Award">
+                <p class="text-warning">GOLDEN PEACOCK AWARD</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I6.png" class="img-fluid rounded-circle mb-2" alt="Logistics Company Award">
+                <p class="text-warning">LOGISTICS COMPANY AWARD</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I4.png" class="img-fluid rounded-circle mb-2" alt="India Pharma Award 2022">
+                <p class="text-warning">INDIA PHARMA AWARD 2022</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I5.png" class="img-fluid rounded-circle mb-2" alt="Silver Feather Award">
+                <p class="text-warning">SILVER FEATHER AWARD</p>
+            </div>
         </div>
     </div>
-    <footer>
-        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-2 mt-auto">
+        <p class="mb-0">DESIGNED AND DEVELOPED BY SURESH S (212223040215)</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -28,393 +28,181 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 ## home.html
 ```
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Pharmaceutical Company </title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 90%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .logo {
-                color: #6fa1f8;
-                font-size: 35px;
-                font-weight: 700;
-                margin-left: -100px;
-                letter-spacing: 3px;
-            }
-            img{
-                height:70px;
-                margin-top:-3px;
-                margin-left:5px;
-                margin-right:5px;
-            }
-            span {
-                color: white;
-            }
-            
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(180%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #6fa1f8;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #6fa1f8;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .content {
-                position: absolute;
-                top: 52%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
-            }
-            .text h2 {
-                color:#6fa1f8;
-                font-weight: 700;
-                font-size: 50px;
-                letter-spacing: 3px;
-            }
-            .text h3 {
-                color:#6fa1f8;
-                font-weight: 700;
-                font-size: 45px;
-                letter-spacing: 3px;
-            }
-            .text p {
-                color:white;
-                text-transform: capitalize;
-                font-size: 24px;
-                margin-bottom: 30px;
-                word-spacing: 2px;
-                letter-spacing: 1px;
-            }
-            .login {
-                margin: 4px -20px;
-                border: 2px solid #6fa1f8;
-                padding: 13px 35px;
-                letter-spacing: 1px;
-                color: white;
-                border-radius: 30px;
-                background-color: #6fa1f8;
-                text-decoration: none;
-            }
-            .login:hover {
-                border: 2px solid #6fa1f8;
-                color: #6fa1f8;
-                background-color: white;
-                transition: 0.5s;
-                cursor: pointer;
-            } 
-            .signup {
-                margin: 0px 50px;
-                border: 2px solid #6fa1f8;
-                padding: 13px 35px;
-                letter-spacing: 1px;
-                color: white;
-                border-radius: 30px;
-                background-color: #6fa1f8;
-                text-decoration: none;
-            }
-            .signup:hover {
-                border: 2px solid #6fa1f8;
-                color: #6fa1f8;
-                background-color:white;
-                transition: 0.5s;
-                cursor: pointer;
-            }
-            footer {
-                background-color: #6fa1f8;
-                margin-top: auto;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipla Pharmaceuticals</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-flex align-items-center">
         <br>
-        <div class="navbar">
-            <img src="download (2).png">
-            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
-        </div>
-        
-        </div>
-        <div class="content">
-            <div class="text">
-                <h2 class="logo">CIPLA<h2>
-                <h3 class="logo">PHARMACEUTICALS</h3>
-                <br>
-                <p>With our growing scientific understanding of rare diseases, we shall continue to introduce ground breaking therapies to give our patients their new beginnings!</p>
-                <br>
-                <div>
-                    <a href="#" class="login">LOG IN</a>
-                    <a href="#" class="signup">SIGN UP</a>
-                </div>
-                
-                
-            </div>
-        </div>  
+
+        <img src="logo.png" alt="Cipla Logo" height="70" class="d-inline-block align-top">
+        <h1 class="mb-0 ml-2">CIPLA <sup>&trade;</sup></h1>
     </div>
-    <footer>
-        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
-    </footer>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Achievements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Enter to Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container d-flex flex-column justify-content-center text-center flex-grow-1">
+    <h1 class="display-4">CIPLA PHARMACEUTICALS</h1>
+    <p class="lead">With Our Growing Scientific Understanding Of Rare Diseases, We Shall Continue To Introduce Ground Breaking Therapies To Give Our Patients Their New Beginnings!</p>
+    <div class="mt-4">
+        <a href="#" class="btn btn-primary btn-lg mx-2">Log In</a>
+        <a href="#" class="btn btn-primary btn-lg mx-2">Sign Up</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-2 bg-primary text-center text-light">
+    <div class="container">
+        <span>DESIGNED AND DEVELOPED BY SURESH S (212223040215)</span>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 ```
 ## products.html
 ```
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Pharmaceutical Company </title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1\ copy.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 90%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .logo {
-                color: #6fa1f8;
-                font-size: 35px;
-                font-weight: 700;
-                margin-left: -100px;
-                letter-spacing: 3px;
-            }
-            img{
-                height:70px;
-                margin-top:-3px;
-                margin-left:5px;
-                margin-right:5px;
-            }
-            span {
-                color: white;
-            }
-            
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(180%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #6fa1f8;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #6fa1f8;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .container {
-                background: transparent;
-                top: 100%;
-                padding: 120px 5%;
-                padding-bottom: 100px;
-            }
-            .container .box-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-                gap: 40px;
-            }
-            .container .box-container .box {
-                color: white;
-                box-shadow: 0 5px 10px rgba(0,0,0,.2);
-                border-radius: 20px;
-                background: transparent;
-                border: 1px solid white;
-                padding: 30px 20px;
-            }
-            .container .box-container .box img {
-                height: 90px;
-                border-radius: 20px;
-            }
-            .container .box-container .box h3 {
-                color:#6fa1f8;
-                font-size: larger;
-                line-height: 4;
-                padding: 10px 0;
-            }
-            .container .box-container .box p {
-                color: white;
-                font-size: large;
-                line-height: 2;
-            }
-            footer {
-                background-color: #6fa1f8;
-                margin-top: auto;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
-        <br>
-        <div class="navbar">
-            <img src="download (2).png">
-            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
-        </div>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipla - Milestones & Achievements</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <div class="box-container">
-                <div class="box">
-                    <img src="download (4).jpeg" alt="">
-                    <h3>CIPLA NICOTEX</h3>
-                    <p>Nicotex is a nicotine gum that helps you quit smoking using the principle of Nicotine Replacement Therapy (NRT).</p>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Cipla Logo" height="70" class="mr-2">
+                <h1 class="mb-0">CIPLA<sup>&trade;</sup></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-lg-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter to Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container flex-fill my-5">
+        <div class="row text-center mt-4">
+            <div class="col-md-2 col-6">
+                <div class="card bg-dark border-0">
+                    <img src="download (4).jpeg" class="card-img-top rounded-circle" alt="CIPLA NICOTEX">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CIPLA NICOTEX</h5>
+                        <p class="card-text text-light">Nicotex is a nicotine gum that helps you quit smoking using the principle of Nicotine Replacement Therapy (NRT).</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="download (9).jpeg" alt="">
-                    <h3>CIPLA MAXIRICH</h3>
-                    <p>Blend of more than 15 Multivitamins & minerals in a softgel capsule to supplement your daily diet. Keeps you active & energised with B-Vitamin support. </p>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="card bg-dark border-0">
+                    <img src="download (9).jpeg" class="card-img-top rounded-circle" alt="CIPLA MAXIRICH">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CIPLA MAXIRICH</h5>
+                        <p class="card-text text-light">Blend of more than 15 Multivitamins & minerals in a softgel capsule to supplement your daily diet. Keeps you active & energised with B-Vitamin support.</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="download (10).jpeg" alt="">
-                    <h3>CIPLA AEROCORCH</h3>
-                    <p>Aerocort Inhaler helps in easy breathing by widening your airways. It also gives relief from symptoms such as tightness in your chest, shortness of breath, wheezing and coughing..</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="card bg-dark border-0">
+                    <img src="download (10).jpeg" class="card-img-top rounded-circle" alt="CIPLA AEROCORCH">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CIPLA AEROCORCH</h5>
+                        <p class="card-text text-light">Aerocort Inhaler helps in easy breathing by widening your airways. It also gives relief from symptoms such as tightness in your chest, shortness of breath.</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="download (11).jpeg" alt="">
-                    <h3>CIPLA OMNIGEL</h3>
-                    <p>Omnigel is scientifically formulated, Diclofenac Gel - to address musculoskeletal pain in day to day life like neck, shoulder & back pain.</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="card bg-dark border-0">
+                    <img src="download (11).jpeg" class="card-img-top rounded-circle" alt="CIPLA OMNIGEL">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CIPLA OMNIGEL</h5>
+                        <p class="card-text text-light">Omnigel is scientifically formulated, Diclofenac Gel - to address musculoskeletal pain in day to day life like neck, shoulder & back pain.</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="download (12).jpeg" alt="">
-                    <h3>CIPLA Urimax</h3>
-                    <p>Urimax Tablet is a Tablet manufactured by Cipla. It is commonly used for the diagnosis or treatment of Improve urination, enlarged prostate.</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="card bg-dark border-0">
+                    <img src="download (12).jpeg" class="card-img-top rounded-circle" alt="CIPLA Urimax">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CIPLA Urimax</h5>
+                        <p class="card-text text-light">Urimax Tablet is a Tablet manufactured by Cipla. It is commonly used for the diagnosis or treatment of Improve urination, enlarged prostate.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-2 mt-auto">
+        <p class="mb-0">DESIGNED AND DEVELOPED BY SURESH S (212223040215)</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 ```
@@ -422,427 +210,186 @@ Publish the website in the LocalHost.
 
 ## people.html
 ```
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Pharmaceutical Company </title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 90%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            
-            
-            
-            .logo {
-                color: #6fa1f8;
-                font-size: 35px;
-                font-weight: 700;
-                margin-left: -90px;
-                letter-spacing: 3px;
-            }
-            img{
-                height:50px;
-                margin-top:-3px;
-                margin-left:-5px;
-                margin-right:5px;
-            }
-            span {
-                color: white;
-            }
-            
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(195%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #6fa1f8;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #6fa1f8;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .image {
-                position: relative;
-                border: 0;
-                top: 100px;
-                
-                background: transparent;
-            }
-            .image table {
-                border: 0;
-                color: white;
-                position: relative;
-                left: 180px;
-                
-            }
-            .image table img {
-                height: 140px;
-                width: 140px;
-                border: 2px solid white;
-                padding: 5px;
-                border-radius: 50%;
-            }
-            .image table td {
-                color: #eefe0a;
-            }
-            footer {
-                background-color: #6fa1f8;
-                margin-top: auto;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
-        <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipla - Milestones & Achievements</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
 
-        <div class="navbar">
-            <img src="download (2).png">
-            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html" class="bg-people"> Acheivements</a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Cipla Logo" height="70" class="mr-2">
+                <h1 class="mb-0">CIPLA<sup>&trade;</sup></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-lg-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter to Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container flex-fill my-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <br>
+                <h2>CIPLA MILESTONES & ACHIEVEMENTS</h2>
+            </div>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-                <h2 class="logo" align="center"  >CIPLA<h2>
-                <h3 class="logo" align="center">MILESTONES & ACHEIVEMENTS</h3>
-        <div class="image">
-            <table cellspacing="20"> 
-                <tr align="center">
-                    <td> <img src="image.png"> </td>
-                    <td> <img src="I2.png"> </td>
-                    <td> <img src="I3.png"> </td>
-                    <td> <img src="I4.png"> </td>
-                    <td> <img src="I5.png"> </td>
-                    <td> <img src="I6.png"> </td>
-                    
-                
-                <tr align="center">
-                    <td> HEALTH & WELLNESS AWARD</td>
-                    <td> GOLDEN PEACOCK AWARD</td>
-                    <td> LOGISTICS COMPANY AWARD</td>
-                    <td> INDIA PHARMA AWARD 2022 </td>
-                    <td> SILVER FEATHER AWARD</td>
-                    <td>INDIAN PHARMA AWARDS 2023</td>
-        
-                </tr>
-            </table>
+        <br><br>
+        <br><br>
+        <div class="row text-center mt-4">
+            <div class="col-md-2 col-6">
+                <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Health & Wellness Award">
+                <p class="text-warning">HEALTH & WELLNESS AWARD</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I2.png" class="img-fluid rounded-circle mb-2" alt="Golden Peacock Award">
+                <p class="text-warning">GOLDEN PEACOCK AWARD</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I6.png" class="img-fluid rounded-circle mb-2" alt="Logistics Company Award">
+                <p class="text-warning">LOGISTICS COMPANY AWARD</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I4.png" class="img-fluid rounded-circle mb-2" alt="India Pharma Award 2022">
+                <p class="text-warning">INDIA PHARMA AWARD 2022</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="I5.png" class="img-fluid rounded-circle mb-2" alt="Silver Feather Award">
+                <p class="text-warning">SILVER FEATHER AWARD</p>
+            </div>
         </div>
     </div>
-    <footer>
-        <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-2 mt-auto">
+        <p class="mb-0">DESIGNED AND DEVELOPED BY SURESH S (212223040215)</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 ```
 ## contact.html
 ```
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Pharmaceutical Company </title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(wallpaper\ for\ intel\ 1.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 90%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .logo {
-                color: #6fa1f8;
-                font-size: 35px;
-                font-weight: 700;
-                margin-left: -100px;
-                letter-spacing: 3px;
-            }
-            img{
-                height:70px;
-                margin-top:-3px;
-                margin-left:5px;
-                margin-right:5px;
-            }
-            span {
-                color: white;
-            }
-            
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(180%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #6fa1f8;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #6fa1f8;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .box {
-                display: flex;
-                column-gap: 20px;
-                background: transparent;
-                position: relative;
-                top: 80px;
-            }
-            .box-1 {
-                height: 330px;
-                width: 430px;
-                border: 3px solid white;
-                border-radius: 50px;
-                background: transparent;
-                position: relative;
-                top: 50px;
-                left: 400px;
-            }
-            .box-2 {
-                height: 330px;
-                top: 50px;
-                width: 430px;
-                border: 3px solid white;
-                border-radius: 50px;
-                background: transparent;
-                position: relative;
-                left: 480px;
-            }
-            .box-1 form {
-                display: flex;
-                color:white;
-                background: transparent;
-                padding: 10px;
-                font-size: 15px;
-                position: relative;
-                top: 15px;
-            }
-            .box-1 form input {
-                background: transparent;
-                display: flex;
-                border: 1px solid white;
-                border-radius: 10px;
-                padding: 15px 20px;
-                font-size: 15px;
-                color: white;
-                position: relative;
-                top: 20px;
-            }
-            .box-1 form textarea {
-                background: transparent;
-                display: flex;
-                color: white;
-                padding: 5px 10px;
-                position: relative;
-                top: 30px;
-                left: 41px;
-                border: 1px solid white;
-                border-radius: 10px;
-            }
-            .box-1 form button {
-                border: 0;
-                outline: none;
-                padding: 5px 30px;
-                left: 30px;
-                color: white;
-                border-radius: 50px;
-                background: #6fa1f8;
-                cursor: pointer;
-                position: relative;
-                top: 30px;
-            }
-            box-2 h2 {
-                color: white;
-                position: relative;
-                top: 25px;
-                left: 100px;
-                font-size: 30px;
-            }
-            .box-2 h2 {
-                color: white;
-                position: relative;
-                top: 25px;
-                left: 50px;
-                font-size: 30px;
-            }
-            .box-2 p {
-                color: white;
-                position: relative;
-                top: 50px;
-                padding: 10px 80px;
-            }
-            .box-2 span {
-                color: #6fa1f8;
-                font-size: 20px;
-            }
-            footer {
-                background-color: #6fa1f8;
-                margin-top: auto;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
-        <br>
-        <div class="navbar">
-            <img src="download (2).png">
-            <h1 class="logo">CIPLA</span><sup>&trade;</sup></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/products.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html">Acheivements</a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
-        </div>
-        <div class="box">
-            <div class="box-1">
-                <form>
-                    <center>
-                        <h1> Contact Us </h1>
-                        <input type="text" placeholder="Your Name">
-                        <br>
-                        <input type="email" placeholder="Your Email">
-                        <br>
-                        <textarea rows="2" cols="30" placeholder="Your Message"> </textarea>
-                        <br>
-                        <button type="submit"> Submit </button>
-                    </center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmaceutical Company</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+    <div class="container-fluid flex-grow-1 d-flex flex-column">
+        <div class="row w-100 mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="logo.png" alt="Cipla Logo" height="70" class="d-inline-block align-top">
+                    <h1 class="mb-0 ml-2">CIPLA<sup>&trade;</sup></h1>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/static/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/static/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/static/people.html">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/static/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-2" type="search" placeholder="Enter to Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
                 </form>
             </div>
-        <div class="box-2"> 
-            <h2> Contact Information </h2>
-            <p> <span>Address</span> : Tidel park No.4, Rajiv Gandhi Salai, Taramani, Chennai</p>
-            <p> <span>Email</span> : sureshdhanush2427@gmail.com</p>
-            <p> <span>Phone</span> : 9876543210</p>
-            <p> <span>SubCategory</span> : Subsidiary of Foreign company</p>
+        </div>
+        <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+            <div class="row w-100 justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center mb-3">
+                    <div class="card bg-dark text-white border-light" style="width: 100%; max-width: 400px;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Contact Us</h3>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center mb-3">
+                    <div class="card bg-dark text-white border-light" style="width: 100%; max-width: 400px;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Contact Information</h3>
+                            <p><strong>Address</strong>: Tidel park No.4, Rajiv Gandhi Salai, Taramani, Chennai</p>
+                            <p><strong>Email</strong>: sureshdhanush2427@gmail.com</p>
+                            <p><strong>Phone</strong>: 9876543210</p>
+                            <p><strong>SubCategory</strong>: Subsidiary of Foreign company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<footer>
-    <center>DESIGNED   AND   DEVELOPED   BY   SURESH S (212223040215) </center>
-</footer>
+    <footer class="bg-primary text-white text-center py-2 mt-auto">
+        DESIGNED AND DEVELOPED BY SURESH S (212223040215)
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>
+
 ```
 ## OUTPUT:
 
